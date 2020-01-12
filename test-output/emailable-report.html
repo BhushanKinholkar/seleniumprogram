@@ -8,39 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">TestNG session test</th></tr>
-<tr><td><a href="#t0">Different testng</a></td><td class="num">5</td><td class="num">0</td><td class="num attn">2</td><td class="num">86,219</td><td></td><td></td></tr>
+<tr><th colspan="7">Yahoo application test</th></tr>
+<tr><td><a href="#t0">yahoo create account form</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">26,882</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestNG session test</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Different testng &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testng_program.GoogleTitleTest</td><td><a href="#m0">Verifytitle</a></td><td rowspan="1">1578811317821</td><td rowspan="1">84</td></tr><tr class="failedodd"><td rowspan="1">testng_program.TestRediffmail</td><td><a href="#m1">VerifyLogo</a></td><td rowspan="1">1578811358807</td><td rowspan="1">20056</td></tr><tr><th colspan="4">Different testng &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">testng_program.TestNgNotes</td><td><a href="#m2">democheck</a></td><td rowspan="1">1578811389653</td><td rowspan="1">4</td></tr><tr class="passedeven"><td><a href="#m3">sample</a></td><td rowspan="1">1578811389666</td><td rowspan="1">9</td></tr><tr class="passedeven"><td><a href="#m4">titlechecl</a></td><td rowspan="1">1578811389678</td><td rowspan="1">5</td></tr><tr class="passedodd"><td rowspan="2">testng_program.TestRediffmail</td><td><a href="#m5">VerifyLink</a></td><td rowspan="1">1578811328839</td><td rowspan="1">132</td></tr><tr class="passedodd"><td><a href="#m6">Verifytitle</a></td><td rowspan="1">1578811388818</td><td rowspan="1">49</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Yahoo application test</th></tr></tbody><tbody id="t0"><tr><th colspan="4">yahoo create account form &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testng_program.ParamaterAnno</td><td><a href="#m0">yahooLogin</a></td><td rowspan="1">1578818934607</td><td rowspan="1">26812</td></tr></tbody>
 </table>
-<h2>Different testng</h2><h3 id="m0">testng_program.GoogleTitleTest#Verifytitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: title is not matched expected [Rediffmail.com] but found [Rediff.com: News | Rediffmail | Stock Quotes | Shopping]
-	at testng_program.GoogleTitleTest.Verifytitle(GoogleTitleTest.java:32)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testng_program.TestRediffmail#VerifyLogo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@class=&apos;n_redifflogo&apos;]&quot;}
-  (Session info: chrome=79.0.3945.117)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;ABCD&apos;, ip: &apos;192.168.43.85&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 78.0.3904.11 (eaaae9de6b899..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57880}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6b2c30d492f0d575510a5a09e1d41168
-*** Element info: {Using=xpath, value=//img[@class=&apos;n_redifflogo&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at testng_program.TestRediffmail.VerifyLogo(TestRediffmail.java:39)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testng_program.TestNgNotes#democheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testng_program.TestNgNotes#sample</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testng_program.TestNgNotes#titlechecl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testng_program.TestRediffmail#VerifyLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testng_program.TestRediffmail#Verifytitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>yahoo create account form</h2><h3 id="m0">testng_program.ParamaterAnno#yahooLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Bhushan</td><td>kinholakr</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

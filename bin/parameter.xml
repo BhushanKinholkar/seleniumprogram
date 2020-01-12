@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Yahoo application test" verbose="1" >
+  <test name="yahoo create account form" >
+  	<parameter name="firstname" value="Bhushan"></parameter>
+  	<parameter name="lastname" value="kinholakr"></parameter>
+  
+    <classes>
+       <class name="testng_program.ParamaterAnno" />
+    </classes>
+  </test>
+</suite>

@@ -1,244 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="7" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TestNG session test" duration-ms="86219" started-at="2020-01-12T06:41:43Z" finished-at="2020-01-12T06:43:09Z">
+  <suite name="Yahoo application test" duration-ms="26882" started-at="2020-01-12T08:48:54Z" finished-at="2020-01-12T08:49:21Z">
     <groups>
-      <group name="Test">
-        <method signature="TestNgPriority.methodcast()[pri:6, instance:testng_program.TestNgPriority@e0379d]" name="methodcast" class="testng_program.TestNgPriority"/>
-        <method signature="TestNgPriority.methoddemo()[pri:5, instance:testng_program.TestNgPriority@e0379d]" name="methoddemo" class="testng_program.TestNgPriority"/>
-        <method signature="TestNgPriority.methodsame()[pri:4, instance:testng_program.TestNgPriority@e0379d]" name="methodsame" class="testng_program.TestNgPriority"/>
-      </group> <!-- Test -->
-      <group name="Title">
-        <method signature="TestNgPriority.Verifytitle()[pri:1, instance:testng_program.TestNgPriority@e0379d]" name="Verifytitle" class="testng_program.TestNgPriority"/>
-      </group> <!-- Title -->
-      <group name="Link">
-        <method signature="TestNgPriority.VerifyLink()[pri:2, instance:testng_program.TestNgPriority@e0379d]" name="VerifyLink" class="testng_program.TestNgPriority"/>
-      </group> <!-- Link -->
-      <group name="Logo">
-        <method signature="TestNgPriority.VerifyLogo()[pri:3, instance:testng_program.TestNgPriority@e0379d]" name="VerifyLogo" class="testng_program.TestNgPriority"/>
-      </group> <!-- Logo -->
     </groups>
-    <test name="Different testng" duration-ms="86219" started-at="2020-01-12T06:41:43Z" finished-at="2020-01-12T06:43:09Z">
-      <class name="testng_program.GoogleTitleTest">
-        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:testng_program.GoogleTitleTest@1083305]" name="OpenBrowser" is-config="true" duration-ms="14313" started-at="2020-01-12T06:41:43Z" finished-at="2020-01-12T06:41:57Z">
+    <test name="yahoo create account form" duration-ms="26882" started-at="2020-01-12T08:48:54Z" finished-at="2020-01-12T08:49:21Z">
+      <class name="testng_program.ParamaterAnno">
+        <test-method status="PASS" signature="yahooLogin(java.lang.String, java.lang.String)[pri:0, instance:testng_program.ParamaterAnno@1040f2f]" name="yahooLogin" duration-ms="26812" started-at="2020-01-12T08:48:54Z" finished-at="2020-01-12T08:49:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhushan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kinholakr]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method status="FAIL" signature="Verifytitle()[pri:0, instance:testng_program.GoogleTitleTest@1083305]" name="Verifytitle" duration-ms="84" started-at="2020-01-12T06:41:57Z" finished-at="2020-01-12T06:41:57Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[title is not matched expected [Rediffmail.com] but found [Rediff.com: News | Rediffmail | Stock Quotes | Shopping]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: title is not matched expected [Rediffmail.com] but found [Rediff.com: News | Rediffmail | Stock Quotes | Shopping]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at testng_program.GoogleTitleTest.Verifytitle(GoogleTitleTest.java:32)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verifytitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testng_program.GoogleTitleTest@1083305]" name="tearDown" is-config="true" duration-ms="444" started-at="2020-01-12T06:41:57Z" finished-at="2020-01-12T06:41:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testng_program.GoogleTitleTest -->
-      <class name="testng_program.TestRediffmail">
-        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:testng_program.TestRediffmail@1b80b2]" name="OpenBrowser" is-config="true" duration-ms="10473" started-at="2020-01-12T06:41:58Z" finished-at="2020-01-12T06:42:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method status="PASS" signature="VerifyLink()[pri:0, instance:testng_program.TestRediffmail@1b80b2]" name="VerifyLink" duration-ms="132" started-at="2020-01-12T06:42:08Z" finished-at="2020-01-12T06:42:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyLink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testng_program.TestRediffmail@1b80b2]" name="tearDown" is-config="true" duration-ms="685" started-at="2020-01-12T06:42:08Z" finished-at="2020-01-12T06:42:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:testng_program.TestRediffmail@1b80b2]" name="OpenBrowser" is-config="true" duration-ms="29148" started-at="2020-01-12T06:42:09Z" finished-at="2020-01-12T06:42:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method status="FAIL" signature="VerifyLogo()[pri:0, instance:testng_program.TestRediffmail@1b80b2]" name="VerifyLogo" duration-ms="20056" started-at="2020-01-12T06:42:38Z" finished-at="2020-01-12T06:42:58Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@class='n_redifflogo']"}
-  (Session info: chrome=79.0.3945.117)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'ABCD', ip: '192.168.43.85', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 78.0.3904.11 (eaaae9de6b899..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57880}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6b2c30d492f0d575510a5a09e1d41168
-*** Element info: {Using=xpath, value=//img[@class='n_redifflogo']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@class='n_redifflogo']"}
-  (Session info: chrome=79.0.3945.117)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'ABCD', ip: '192.168.43.85', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 78.0.3904.11 (eaaae9de6b899..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57880}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6b2c30d492f0d575510a5a09e1d41168
-*** Element info: {Using=xpath, value=//img[@class='n_redifflogo']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at testng_program.TestRediffmail.VerifyLogo(TestRediffmail.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyLogo -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testng_program.TestRediffmail@1b80b2]" name="tearDown" is-config="true" duration-ms="822" started-at="2020-01-12T06:42:58Z" finished-at="2020-01-12T06:42:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:testng_program.TestRediffmail@1b80b2]" name="OpenBrowser" is-config="true" duration-ms="9128" started-at="2020-01-12T06:42:59Z" finished-at="2020-01-12T06:43:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method status="PASS" signature="Verifytitle()[pri:0, instance:testng_program.TestRediffmail@1b80b2]" name="Verifytitle" duration-ms="49" started-at="2020-01-12T06:43:08Z" finished-at="2020-01-12T06:43:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verifytitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testng_program.TestRediffmail@1b80b2]" name="tearDown" is-config="true" duration-ms="777" started-at="2020-01-12T06:43:08Z" finished-at="2020-01-12T06:43:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testng_program.TestRediffmail -->
-      <class name="testng_program.TestNgNotes">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testng_program.TestNgNotes@e677af]" name="setup" is-config="true" duration-ms="17" started-at="2020-01-12T06:41:43Z" finished-at="2020-01-12T06:41:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="method1()[pri:0, instance:testng_program.TestNgNotes@e677af]" name="method1" is-config="true" duration-ms="1" started-at="2020-01-12T06:41:43Z" finished-at="2020-01-12T06:41:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method1 -->
-        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:testng_program.TestNgNotes@e677af]" name="LaunchBrowser" is-config="true" duration-ms="1" started-at="2020-01-12T06:43:09Z" finished-at="2020-01-12T06:43:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchBrowser -->
-        <test-method status="PASS" signature="democheck()[pri:0, instance:testng_program.TestNgNotes@e677af]" name="democheck" duration-ms="4" started-at="2020-01-12T06:43:09Z" finished-at="2020-01-12T06:43:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- democheck -->
-        <test-method status="PASS" signature="EURL()[pri:0, instance:testng_program.TestNgNotes@e677af]" name="EURL" is-config="true" duration-ms="0" started-at="2020-01-12T06:43:09Z" finished-at="2020-01-12T06:43:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EURL -->
-        <test-method status="PASS" signature="method5()[pri:0, instance:testng_program.TestNgNotes@e677af]" name="method5" is-config="true" duration-ms="1" started-at="2020-01-12T06:43:09Z" finished-at="2020-01-12T06:43:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method5 -->
-        <test-method status="PASS" signature="sample()[pri:0, instance:testng_program.TestNgNotes@e677af]" name="sample" duration-ms="9" started-at="2020-01-12T06:43:09Z" finished-at="2020-01-12T06:43:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sample -->
-        <test-method status="PASS" signature="EURL()[pri:0, instance:testng_program.TestNgNotes@e677af]" name="EURL" is-config="true" duration-ms="0" started-at="2020-01-12T06:43:09Z" finished-at="2020-01-12T06:43:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EURL -->
-        <test-method status="PASS" signature="method5()[pri:0, instance:testng_program.TestNgNotes@e677af]" name="method5" is-config="true" duration-ms="1" started-at="2020-01-12T06:43:09Z" finished-at="2020-01-12T06:43:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method5 -->
-        <test-method status="PASS" signature="EURL()[pri:0, instance:testng_program.TestNgNotes@e677af]" name="EURL" is-config="true" duration-ms="0" started-at="2020-01-12T06:43:09Z" finished-at="2020-01-12T06:43:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EURL -->
-        <test-method status="PASS" signature="titlechecl()[pri:0, instance:testng_program.TestNgNotes@e677af]" name="titlechecl" duration-ms="5" started-at="2020-01-12T06:43:09Z" finished-at="2020-01-12T06:43:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- titlechecl -->
-        <test-method status="PASS" signature="method6()[pri:0, instance:testng_program.TestNgNotes@e677af]" name="method6" is-config="true" duration-ms="0" started-at="2020-01-12T06:43:09Z" finished-at="2020-01-12T06:43:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method6 -->
-        <test-method status="PASS" signature="method5()[pri:0, instance:testng_program.TestNgNotes@e677af]" name="method5" is-config="true" duration-ms="0" started-at="2020-01-12T06:43:09Z" finished-at="2020-01-12T06:43:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method5 -->
-        <test-method status="PASS" signature="methid7()[pri:0, instance:testng_program.TestNgNotes@e677af]" name="methid7" is-config="true" duration-ms="1" started-at="2020-01-12T06:43:09Z" finished-at="2020-01-12T06:43:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methid7 -->
-        <test-method status="PASS" signature="close()[pri:0, instance:testng_program.TestNgNotes@e677af]" name="close" is-config="true" duration-ms="2" started-at="2020-01-12T06:43:09Z" finished-at="2020-01-12T06:43:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- testng_program.TestNgNotes -->
-    </test> <!-- Different testng -->
-  </suite> <!-- TestNG session test -->
+        </test-method> <!-- yahooLogin -->
+      </class> <!-- testng_program.ParamaterAnno -->
+    </test> <!-- yahoo create account form -->
+  </suite> <!-- Yahoo application test -->
 </testng-results>
