@@ -1,66 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="59588" started-at="2020-01-12T05:24:01Z" finished-at="2020-01-12T05:25:01Z">
+  <suite name="Default suite" duration-ms="32699" started-at="2020-01-12T06:23:44Z" finished-at="2020-01-12T06:24:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="59588" started-at="2020-01-12T05:24:01Z" finished-at="2020-01-12T05:25:01Z">
-      <class name="testng_program.TestRediffmail">
-        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:testng_program.TestRediffmail@2f8f11]" name="OpenBrowser" is-config="true" duration-ms="12849" started-at="2020-01-12T05:24:01Z" finished-at="2020-01-12T05:24:14Z">
+    <test name="Default test" duration-ms="32699" started-at="2020-01-12T06:23:44Z" finished-at="2020-01-12T06:24:17Z">
+      <class name="testng_program.GoogleTitleTest">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:testng_program.GoogleTitleTest@2f8f11]" name="OpenBrowser" is-config="true" duration-ms="30413" started-at="2020-01-12T06:23:44Z" finished-at="2020-01-12T06:24:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method status="PASS" signature="VerifyLink()[pri:0, instance:testng_program.TestRediffmail@2f8f11]" name="VerifyLink" duration-ms="2101" started-at="2020-01-12T05:24:14Z" finished-at="2020-01-12T05:24:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyLink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testng_program.TestRediffmail@2f8f11]" name="tearDown" is-config="true" duration-ms="847" started-at="2020-01-12T05:24:16Z" finished-at="2020-01-12T05:24:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:testng_program.TestRediffmail@2f8f11]" name="OpenBrowser" is-config="true" duration-ms="8701" started-at="2020-01-12T05:24:17Z" finished-at="2020-01-12T05:24:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method status="FAIL" signature="VerifyLogo()[pri:0, instance:testng_program.TestRediffmail@2f8f11]" name="VerifyLogo" duration-ms="20082" started-at="2020-01-12T05:24:26Z" finished-at="2020-01-12T05:24:46Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="Verifytitle()[pri:0, instance:testng_program.GoogleTitleTest@2f8f11]" name="Verifytitle" duration-ms="35" started-at="2020-01-12T06:24:15Z" finished-at="2020-01-12T06:24:15Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@class='n_redifflogo']"}
-  (Session info: chrome=79.0.3945.117)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'ABCD', ip: '192.168.43.85', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 78.0.3904.11 (eaaae9de6b899..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49870}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e64502d912e44021660b26ce25937636
-*** Element info: {Using=xpath, value=//img[@class='n_redifflogo']}]]>
+              <![CDATA[title is not matched expected [Rediffmail.com] but found [Rediff.com: News | Rediffmail | Stock Quotes | Shopping]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@class='n_redifflogo']"}
-  (Session info: chrome=79.0.3945.117)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'ABCD', ip: '192.168.43.85', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 78.0.3904.11 (eaaae9de6b899..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49870}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e64502d912e44021660b26ce25937636
-*** Element info: {Using=xpath, value=//img[@class='n_redifflogo']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at testng_program.TestRediffmail.VerifyLogo(TestRediffmail.java:39)
+              <![CDATA[java.lang.AssertionError: title is not matched expected [Rediffmail.com] but found [Rediff.com: News | Rediffmail | Stock Quotes | Shopping]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at testng_program.GoogleTitleTest.Verifytitle(GoogleTitleTest.java:32)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -88,27 +51,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyLogo -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testng_program.TestRediffmail@2f8f11]" name="tearDown" is-config="true" duration-ms="1079" started-at="2020-01-12T05:24:46Z" finished-at="2020-01-12T05:24:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:testng_program.TestRediffmail@2f8f11]" name="OpenBrowser" is-config="true" duration-ms="11581" started-at="2020-01-12T05:24:47Z" finished-at="2020-01-12T05:24:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method status="PASS" signature="Verifytitle()[pri:0, instance:testng_program.TestRediffmail@2f8f11]" name="Verifytitle" duration-ms="1494" started-at="2020-01-12T05:24:59Z" finished-at="2020-01-12T05:25:00Z">
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verifytitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testng_program.TestRediffmail@2f8f11]" name="tearDown" is-config="true" duration-ms="756" started-at="2020-01-12T05:25:00Z" finished-at="2020-01-12T05:25:01Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testng_program.GoogleTitleTest@2f8f11]" name="tearDown" is-config="true" duration-ms="2176" started-at="2020-01-12T06:24:15Z" finished-at="2020-01-12T06:24:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testng_program.TestRediffmail -->
+      </class> <!-- testng_program.GoogleTitleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
