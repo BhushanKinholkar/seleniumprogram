@@ -36,7 +36,7 @@ public class NewTabOpen
 		driver.close();
 		/*Difference between in driver.close() and driver.quit()
 		 * driver.close()==> It will close the browser tabs
-		 * driver.open()==> It will quit the browser
+		 * driver.quit()==> It will quit the browser
 		 * */
 		
 		
