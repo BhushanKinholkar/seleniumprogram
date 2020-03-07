@@ -10,7 +10,7 @@ public class BrowserOpen {
 		System.setProperty("webdriver.chrome.driver", "D:\\Selenium jars\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://demo.guru99.com/test/radio.html");
-		
+		System.out.println("hellow selenium");
 		
 		
 	}
