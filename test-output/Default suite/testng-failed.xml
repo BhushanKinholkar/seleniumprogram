@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng_program.GoogleTitleTest">
+      <class name="testng_program.TC_Class1">
         <methods>
-          <include name="Verifytitle"/>
-          <include name="OpenBrowser"/>
-          <include name="tearDown"/>
+          <include name="tc04VerifyLoggedInPage"/>
+          <include name="tc02VerifyLaunchPage"/>
+          <include name="tc05VerifyHyperlinks"/>
         </methods>
-      </class> <!-- testng_program.GoogleTitleTest -->
+      </class> <!-- testng_program.TC_Class1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
