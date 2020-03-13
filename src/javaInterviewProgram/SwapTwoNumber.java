@@ -6,6 +6,7 @@ public class SwapTwoNumber {
 
 	public static void main(String[] args) 
 	{
+		// Program for get value from user input and swaping the value
 		/*
 		int thirdvalue;
 		
@@ -30,6 +31,8 @@ public class SwapTwoNumber {
 		System.out.println("B value is..."+ secondvalue);
 		*/
 		
+		
+		// Program for without using temp variable swaping program
 		/*
 		int a = 10;
 		int b = 20;//10
@@ -47,6 +50,8 @@ public class SwapTwoNumber {
 		System.out.println("After swaping a value is....." + a);
 		*/
 		
+		
+		//Program for swaping with using temp variable
 		int a = 10;
 		int b = 20;
 		int temp;
