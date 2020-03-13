@@ -62,21 +62,6 @@ public class SwapTwoNumber {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 }
