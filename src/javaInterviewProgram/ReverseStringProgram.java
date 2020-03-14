@@ -9,7 +9,6 @@ public class ReverseStringProgram {
 		int count = name.length();
 		System.out.println(count);
 		String mreverse = "";
-		char[] value = name.toCharArray();
 		
 		for(int i= count-1; i>=0; i--)
 		{
